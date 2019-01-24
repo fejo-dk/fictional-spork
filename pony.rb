@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 class Pony
-  attr_reader :name
+  attr_reader :name, :color
 
-  def initialize(name:)
+  def initialize(name:, color:)
     @name = name
+    @color = color
   end
 end
