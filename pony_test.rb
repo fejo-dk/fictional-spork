@@ -15,4 +15,13 @@ class TestMeme < Minitest::Test
   def test_that_it_has_color
     assert_equal :pink, @pony.color
   end
+
+  def test_that_it_idles
+    assert @pony.idle?
+  end
+
+  def test_that_it_can_run
+    @pony.run
+    assert @pony.running?
+  end
 end
